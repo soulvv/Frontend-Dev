@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Inline Elements</title>
+</head>
+<body>
+  <p>This is a <strong>bold</strong> and <em>italic</em> statement.<br>
+  Here’s a <mark>highlighted</mark> idea. <small>Note: formatted for clarity.</small></p>
+</body>
+</html>
