@@ -1,8 +1,71 @@
 <!DOCTYPE html>
-<html>
-<head><title>Assignment 3</title></head>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Course Registration Form</title>
+</head>
 <body>
-<h1>Assignment 3</h1>
-<p>HTML content for question 3 goes here.</p>
+<header>
+<h1>Course Registration</h1>
+</header>
+
+
+<main>
+<!-- Form structure using fieldset and legend -->
+<form>
+<fieldset>
+<legend>Student Details</legend>
+<label for="name">Name:</label>
+<br>
+<input type="text" id="name" name="name" title="Enter full name">
+<br><br>
+<label for="email">Email:</label>
+<br>
+<input type="email" id="email" name="email" title="Enter email address">
+</fieldset>
+
+
+<fieldset>
+<legend>Course Selection</legend>
+<label for="course">Choose Course:</label>
+<br>
+<select id="course" name="course">
+<option value="ml">Machine Learning</option>
+<option value="cloud" selected>Cloud Computing</option>
+<option value="web">Web Development</option>
+</select>
+</fieldset>
+
+
+<!-- Table showing available schedules -->
+<h2>Available Schedules</h2>
+<table border="1">
+<thead>
+<tr>
+<th>Day</th>
+<th>Time</th>
+<th>Instructor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Monday</td>
+<td>10:00 - 12:00</td>
+<td>Prof. A</td>
+</tr>
+<tr>
+<td>Wednesday</td>
+<td>14:00 - 16:00</td>
+<td>Dr. B</td>
+</tr>
+</tbody>
+</table>
+</form>
+</main>
+
+
+<footer>
+<p>Contact: admissions@example.edu</p>
+</footer>
 </body>
 </html>
