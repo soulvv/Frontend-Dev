@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>Q7 - Login Form with CSRF</title></head>
+<body>
+  <h1>Login</h1>
+  <!-- A CSRF token helps the server verify that the form submission came from the original site/user session -->
+  <form action="#" method="post">
+    <label>Username:<br><input type="text" name="username" required></label><br><br>
+    <label>Password:<br><input type="password" name="password" required></label><br><br>
+    <input type="hidden" name="csrf_token" value="dummy_csrf_token_12345">
+    <input type="submit" value="Login">
+  </form>
+</body>
+</html>
