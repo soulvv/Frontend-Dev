@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Layout</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+header { position: sticky; top: 0; background: #333; color: white; padding: 1rem; text-align: center; }
+.hero { background: url('hero.jpg') center/cover no-repeat; height: 60vh; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem; }
+.about { display: flex; padding: 40px; gap: 20px; }
+.about img { width: 50%; border-radius: 10px; }
+.services { display: flex; justify-content: center; gap: 20px; padding: 40px; }
+.box { background: rgba(0,0,0,0.05); padding: 20px; border: 2px solid #ccc; border-radius: 10px; flex: 1; }
+.contact { padding: 40px; }
+footer { background: #222; color: white; text-align: center; padding: 1rem; }
+@media(max-width:600px){ .about, .services { flex-direction: column; } }
+</style>
+</head>
+<body>
+<header><nav>Home | About | Services | Contact</nav></header>
+<div class="hero">Welcome to My Site</div>
+<section class="about"><div><h2>About Me</h2><p>Creative developer focused on web design.</p></div><img src="about.jpg"></section>
+<section class="services">
+<div class="box">Design</div>
+<div class="box">Development</div>
+<div class="box">Support</div>
+</section>
+<section class="contact"><h2>Contact</h2><form><input type="text" placeholder="Name"><input type="email" placeholder="Email"></form></section>
+<footer>&copy; 2025 Advita</footer>
+</body>
+</html>
