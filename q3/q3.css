@@ -1,0 +1,11 @@
+*{box-sizing:border-box}
+nd:#f1f1f1;padding:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;transition:transform .25s}
+.box:hover{transform:rotate(2deg)}
+.footer{background:#222;color:#fff;padding:12px;text-align:center}
+
+
+@media (max-width:700px){.boxes{flex-direction:column}}body{margin:0;font-family:system-ui,Arial;display:flex;flex-direction:column;min-height:100vh}
+.header nav{display:flex;justify-content:space-around;padding:16px;background:#222;color:#fff}
+.header nav a{color:#fff;text-decoration:none}
+.boxes{display:flex;gap:16px;flex:1;padding:24px;align-items:stretch}
+.box{flex:1;backgrou
