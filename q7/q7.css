@@ -1,0 +1,8 @@
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#fff}
+.loader{display:flex;gap:12px;align-items:flex-end}
+.dot{width:14px;height:14px;border-radius:50%;background:#333;animation:bounce 0.8s infinite}
+.d1{animation-delay:0s}
+.d2{animation-delay:.12s}
+.d3{animation-delay:.24s}
+@keyframes bounce{0%{transform:translateY(0)}50%{transform:translateY(-16px)}100%{transform:tra
