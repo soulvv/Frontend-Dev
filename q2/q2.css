@@ -1,0 +1,10 @@
+*{box-sizing:border-box}
+body{font-family:Arial;margin:0;padding:20px}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:#f7f7f7;padding:18px;border-radius:8px;display:flex;flex-direction:column;justify-content:space-between;min-height:140px;transition:transform .3s}
+.card:hover{transform:scale(1.05)}
+.price{font-weight:700;margin-top:12px}
+
+
+@media (max-width:900px){.gallery{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:600px){.gallery{grid-template-columns:1fr}}
