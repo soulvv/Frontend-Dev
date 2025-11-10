@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q2 - Responsive Web Design Layout</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 20px; }
+  header, footer { padding: 10px; background: #f1f1f1; }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 10px;
+  }
+  .features {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  .feature {
+    flex: 1;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease;
+  }
+  .feature:hover {
+    transform: scale(1.05);
+  }
+  footer {
+    text-align: center;
+  }
+  @media (max-width: 750px) {
+    .features { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="logo"><strong>MyLogo</strong></div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <div class="features">
+    <div class="feature"><h3>Feature 1</h3><p>Some text here...</p></div>
+    <div class="feature"><h3>Feature 2</h3><p>Some text here...</p></div>
+    <div class="feature"><h3>Feature 3</h3><p>Some text here...</p></div>
+  </div>
+</main>
+
+<footer>© 2025 MyWebsite</footer>
+</body>
+</html>

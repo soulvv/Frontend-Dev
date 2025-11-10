@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q6 - Responsive Image Grid</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 20px; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 10px;
+  }
+  .card {
+    position: relative;
+    overflow: hidden;
+  }
+  .card img {
+    width: 100%; height: 200px; object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  .overlay {
+    position: absolute;
+    inset: 0;
+    display: flex; align-items: center; justify-content: center;
+    color: #fff; font-size: 1.2rem;
+    background: rgba(0,0,0,0.5);
+    opacity: 0; transition: opacity 0.3s ease;
+  }
+  .card:hover img { transform: scale(1.1); }
+  .card:hover .overlay { opacity: 1; }
+</style>
+</head>
+<body>
+<h2>Responsive Image Grid with Hover Overlay</h2>
+<div class="grid">
+  <div class="card"><img src="https://picsum.photos/400?11"><div class="overlay">Nature</div></div>
+  <div class="card"><img src="https://picsum.photos/400?12"><div class="overlay">City</div></div>
+  <div class="card"><img src="https://picsum.photos/400?13"><div class="overlay">Mountains</div></div>
+  <div class="card"><img src="https://picsum.photos/400?14"><div class="overlay">Ocean</div></div>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q1 - Responsive Image Filter Gallery</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 20px; }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+  }
+  figure { margin: 0; text-align: center; overflow: hidden; }
+  img {
+    width: 100%; height: 220px; object-fit: cover;
+    transition: filter 0.5s ease;
+  }
+  figcaption { padding: 6px; font-size: 0.9rem; color: #555; }
+
+  figure:nth-child(1) img { filter: blur(3px); }
+  figure:nth-child(2) img { filter: grayscale(100%); }
+  figure:nth-child(3) img { filter: sepia(100%); }
+  figure:nth-child(4) img { filter: brightness(0.6); }
+  figure:nth-child(5) img { filter: contrast(1.5); }
+  figure:nth-child(6) img { filter: hue-rotate(90deg); }
+
+  figure:hover img { filter: none; }
+
+  @media (max-width: 600px) {
+    .gallery { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<h2>Responsive Image Filter Gallery</h2>
+<div class="gallery">
+  <figure><img src="https://picsum.photos/400?1"><figcaption>Blur</figcaption></figure>
+  <figure><img src="https://picsum.photos/400?2"><figcaption>Grayscale</figcaption></figure>
+  <figure><img src="https://picsum.photos/400?3"><figcaption>Sepia</figcaption></figure>
+  <figure><img src="https://picsum.photos/400?4"><figcaption>Brightness</figcaption></figure>
+  <figure><img src="https://picsum.photos/400?5"><figcaption>Contrast</figcaption></figure>
+  <figure><img src="https://picsum.photos/400?6"><figcaption>Hue Rotate</figcaption></figure>
+</div>
+</body>
+</html>

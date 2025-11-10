@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q5 - Responsive Navigation Menu</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: Arial, sans-serif; }
+  header {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 15px 25px; background: #333; color: #fff;
+  }
+  .logo { font-size: 1.3rem; font-weight: bold; }
+  nav { display: flex; gap: 15px; }
+  nav a {
+    color: #fff; text-decoration: none; padding: 8px 10px;
+    transition: background 0.3s ease;
+  }
+  nav a:hover { background: #555; border-radius: 4px; }
+
+  .menu-toggle {
+    display: none; flex-direction: column; cursor: pointer;
+  }
+  .menu-toggle div {
+    width: 25px; height: 3px; background: #fff; margin: 3px 0;
+  }
+
+  @media (max-width: 700px) {
+    nav { display: none; flex-direction: column; background: #444; width: 100%; }
+    nav.active { display: flex; }
+    .menu-toggle { display: flex; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">MySite</div>
+  <div class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('active')">
+    <div></div><div></div><div></div>
+  </div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Projects</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q4 - Responsive Typography</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 40px;
+  }
+  h1 {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+  }
+  p {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    max-width: 700px;
+    margin: auto;
+  }
+  @media (max-width: 700px) {
+    p {
+      line-height: 1.6;
+      padding: 0 10px;
+    }
+  }
+</style>
+</head>
+<body>
+<section>
+  <h1>Responsive Typography Example</h1>
+  <p>This text scales smoothly using the clamp() function for better readability on all devices.</p>
+</section>
+</body>
+</html>

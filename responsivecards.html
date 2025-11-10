@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q3 - Responsive Cards</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 20px; }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .card {
+    flex: 1 1 calc(25% - 15px);
+    padding: 20px;
+    background: #f9f9f9;
+    text-align: center;
+    transition: background 0.3s ease;
+  }
+  .card:hover { background: #e0e7ff; }
+
+  @media (max-width: 900px) {
+    .card { flex: 1 1 calc(50% - 15px); }
+  }
+  @media (max-width: 600px) {
+    .card { flex: 1 1 100%; }
+  }
+</style>
+</head>
+<body>
+<h2>Responsive Cards with Media Queries</h2>
+<div class="cards">
+  <div class="card">Card 1</div>
+  <div class="card">Card 2</div>
+  <div class="card">Card 3</div>
+  <div class="card">Card 4</div>
+</div>
+</body>
+</html>
