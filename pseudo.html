@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pseudo-Classes Demo</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+.example {
+  text-align: center;
+}
+a:hover { color: red; }
+button:active { background: lightgreen; }
+input:focus { border: 2px solid blue; }
+ul li:nth-child(2) { color: purple; }
+</style>
+</head>
+<body>
+<div class="example">
+  <a href="#">Hover over me</a><p>:hover</p>
+</div>
+<div class="example">
+  <button>Click me</button><p>:active</p>
+</div>
+<div class="example">
+  <input type="text" placeholder="Focus here"><p>:focus</p>
+</div>
+<div class="example">
+  <ul><li>First</li><li>Second</li><li>Third</li></ul><p>:nth-child()</p>
+</div>
+</body>
+</html>

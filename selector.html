@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Selectors</title>
+<style>
+p { color: blue; }
+.highlight { background: yellow; }
+#unique { color: green; }
+a[target="_blank"] { color: red; }
+ul > li { font-weight: bold; }
+h2 + p { color: purple; }
+h3 ~ p { font-style: italic; }
+.container p { margin-left: 20px; }
+</style>
+</head>
+<body>
+<header><h1>Selectors Demo</h1></header>
+<section class="container">
+<h2>Heading 2</h2>
+<p>Element Selector</p>
+<p class="highlight">Class Selector</p>
+<p id="unique">ID Selector</p>
+<a href="#" target="_blank">Attribute Selector</a>
+<ul><li>Combinator ></li></ul>
+<h3>Heading 3</h3>
+<p>General Sibling Selector</p>
+</section>
+<footer><p>Footer Text</p></footer>
+</body>
+</html>

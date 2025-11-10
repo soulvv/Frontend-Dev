@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Button Collection</title>
+<style>
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 100vh;
+}
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.primary { background: royalblue; color: white; }
+.secondary { background: gray; color: white; }
+.outline { border: 2px solid royalblue; color: royalblue; background: none; }
+button:hover { transform: scale(1.05); }
+button:active { transform: scale(0.95); }
+button:focus { outline: 3px solid orange; }
+button:disabled { background: lightgray; color: #555; cursor: not-allowed; }
+</style>
+</head>
+<body>
+<button class="primary">Primary</button>
+<button class="secondary">Secondary</button>
+<button class="outline">Outline</button>
+<button disabled>Disabled</button>
+</body>
+</html>
