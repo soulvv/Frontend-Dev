@@ -1,0 +1,13 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,Arial;background:#f7f9fc;color:#111}
+header,footer{text-align:center;padding:12px;background:#fff}
+main.center{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:28px}
+.demo{display:flex;gap:28px;align-items:center;flex-wrap:wrap}
+.outer{background:#fff;padding:18px;border-radius:8px}
+.bordered{border:6px dashed #7aa;padding:14px;background:#eef}
+.padded{background:#fff;padding:22px;border:3px solid #cde}
+.content{background:#fff6c8;padding:16px}
+.comparison{display:flex;flex-direction:column;gap:12px;margin-left:20px}
+.box{width:260px;padding:20px;border:6px solid #ddd;background:#fff;overflow:auto}
+.borderbox{box-sizing:border-box;border-color:#8fbcff}
+@media(max-width:800px){.demo{flex-direction:column;align-items:center}}

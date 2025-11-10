@@ -1,0 +1,9 @@
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:system-ui,Segoe UI,Arial}
+.site-header,.site-footer{position:fixed;left:0;right:0;height:64px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;z-index:10}
+main{padding-top:80px;padding-bottom:80px}
+.linear{min-height:60vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px;background:linear-gradient(120deg,#ff9a9e 0%,#fecfef 50%,#a18cd1 100%)}
+.radial{min-height:60vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px;background:radial-gradient(circle at 30% 30%, #ffd89b, #19547b);background-attachment:fixed}
+.linear h2,.radial h2{color:#fff;margin:0 0 12px;font-size:2rem}
+.linear p,.radial p{color:rgba(255,255,255,0.9);max-width:70ch;text-align:center}
+@media(max-width:700px){.linear,.radial{padding:24px}}

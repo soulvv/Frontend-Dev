@@ -1,0 +1,15 @@
+*{box-sizing:border-box}
+body{font-family:system-ui,Arial;margin:0;background:#fbfcff;color:#111}
+header,footer{text-align:center;padding:14px;background:#fff}
+main{padding:28px}
+.demo-form input[type="text"]{padding:10px;border:2px solid #ccc;border-radius:6px;display:block;margin-bottom:12px}
+.demo-form input[type="email"]{padding:10px;border:2px dashed #9aa;border-radius:6px;display:block;margin-bottom:12px}
+a[href^="https"]{color:#0b6;font-weight:600}
+a[href^="http"]{color:#06c;text-decoration:underline}
+.items li:nth-child(odd){background:#f1f6ff;padding:10px}
+.items li:nth-child(even){background:#fff;padding:10px}
+.items li.special::before{content:"★ ";color:#e09}
+.demo-form input:focus{outline:3px solid rgba(32,101,209,0.15);outline-offset:4px}
+.combos > p + span{display:block;margin-top:8px;color:#666}
+.first ~ .second{letter-spacing:0.5px}
+#demo:focus{border-color:#2065d1}
