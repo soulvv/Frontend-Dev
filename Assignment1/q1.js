@@ -18,3 +18,4 @@ if (currentHour < 12) {
 }
 
 console.log(greeting);
+
