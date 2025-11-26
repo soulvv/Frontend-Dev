@@ -1,0 +1,36 @@
+/* Background container */
+body {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* Blurry background image */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("pic.jpg") center/cover no-repeat;
+    filter: blur(5px);
+    opacity: 0.85;
+    z-index: -1;
+}
+
+
+.main-box {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    color: white;
+}
+
+.table {
+    background: white;
+    border-radius: 8px;
+}
+
+.table-hover tbody tr:hover {
+    background: #f9fafb;
+}
